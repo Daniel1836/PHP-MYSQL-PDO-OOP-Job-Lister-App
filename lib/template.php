@@ -2,10 +2,11 @@
 
 class Template
 {
+	//path to template
 	protected $template;
 
 	protected $vars = array();
-
+        //constructor
 	public function __construct($template)
 	{
 		$this->template = $template;
