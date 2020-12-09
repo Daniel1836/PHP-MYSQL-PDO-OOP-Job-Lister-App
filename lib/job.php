@@ -65,9 +65,10 @@ public function getJob($id)
 
 	return $row;
 }
-
+//create job
 public function create($data)
 {
+	//insert query
 	$this->db->query("INSERT INTO jobs (category_id, job_title, company, description, location, salary, contact_user, contact_email)
 		VALUES (:category_id, :job_title, :company, :description, :location, :salary, :contact_user, :contact_email)");
 //bind data
@@ -79,7 +80,7 @@ public function create($data)
 	$this->db->bind(':salary', $data['salary']);
 	$this->db->bind(':contact_user', $data['contact_user']);
 	$this->db->bind(':contact_email', $data['contact_email']);
-
+//execute
 if($this->db->execute())
 {
   return true;
@@ -87,7 +88,7 @@ if($this->db->execute())
   return false;
 }
 }
-
+//delete
 public function delete($id)
 {
 	$this->db->query("DELETE FROM jobs where id = $id");
