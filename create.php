@@ -5,6 +5,7 @@ $job = new Job;
 
 if(isset($_POST['submit']))
 {
+	//create data array
 	$data = array();
 	$data['job_title'] = $_POST['job_title'];
 	$data['company'] = $_POST['company'];
