@@ -45,6 +45,6 @@
 		<label>Contact Email</label>
 		<input type="text" class="form-control" name="contact_email"  value="<?php echo $job->contact_email; ?>">
 	</div>
-	<input type="submit" style="background-color: #becfd0;" class="btn btn-default" value="submit" name="submit">
+	<input type="submit" class="btn btn-default" value="submit" name="submit">
 </form>
 <?php include 'inc/footer.php'; ?>
