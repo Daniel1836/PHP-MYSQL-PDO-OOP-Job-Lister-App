@@ -70,7 +70,7 @@ public function create($data)
 {
 	$this->db->query("INSERT INTO jobs (category_id, job_title, company, description, location, salary, contact_user, contact_email)
 		VALUES (:category_id, :job_title, :company, :description, :location, :salary, :contact_user, :contact_email)");
-
+//bind data
 	$this->db->bind(':category_id', $data['category_id']);
 	$this->db->bind(':job_title', $data['job_title']);
 	$this->db->bind(':company', $data['company']);
