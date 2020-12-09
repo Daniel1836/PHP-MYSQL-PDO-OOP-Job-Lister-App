@@ -1,5 +1,5 @@
 <?php include 'inc/header.php';?>
-<h2 class="page-header" style="color:grey;">Create Job Listing</h2>
+<h2 class="page-header">Create Job Listing</h2>
 <form method="post" action="create.php">
 	<div class="form-group">
 		<label>Company</label>
@@ -39,6 +39,6 @@
 		<label>Contact Email</label>
 		<input type="text" class="form-control" name="contact_email">
 	</div>
-	<input type="submit" style="background-color: #acafb3;" class="btn btn-default" value="submit" name="submit">
+	<input type="submit" value="submit" name="submit">
 </form>
 <?php include 'inc/footer.php'; ?>
